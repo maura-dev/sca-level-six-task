@@ -1,0 +1,332 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+*{
+    box-sizing: border-box;
+}
+html,body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Rubik', sans-serif;
+    font-size: 18px;
+    color:hsl(229, 8%, 60%);
+    overflow-x: hidden;
+    font-weight: 400;
+}
+
+button{
+    padding:8px 20px;
+    border-radius: 5px;
+    outline-style: none;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 500;
+}
+.attribution {
+     font-size: 11px; 
+     text-align: center; 
+}
+.attribution a {
+     color: hsl(228, 45%, 44%); 
+}
+
+nav,
+.footer-item{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between; 
+    padding:0 2%;
+}
+
+nav img{
+    height:30px;
+    margin:20px;
+}
+
+nav ul{
+    display:flex;
+    flex-direction: row;
+    justify-content: right;
+}
+
+nav ul li{
+    list-style-type: none;
+    color:hsl(229, 8%, 60%);
+    margin-right:30px;
+    font-weight: 500;
+    font-size: medium;
+}
+
+.nav-item{
+    margin-top: 8px;
+}
+
+.nav-btn{
+    padding:8px 20px;
+    background-color: hsl(0, 94%, 66%);
+    border-radius: 5px;
+    color:white;
+}
+
+.main{
+    padding:0 2%;
+}
+
+.hero-section{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.hero{
+    width:40%;
+    padding-top: 30px;
+    padding-left: 20px;
+    line-height: 30px;
+}
+
+.hero-title{
+    color:hsl(229, 31%, 21%);
+    line-height: normal;
+}
+
+.hero-img{
+    width:50%;
+}
+
+.bg{
+    width:30%;
+    height:39%;
+    background-color: hsl(231, 69%, 60%);
+    position:absolute;
+    top: 52%;
+    right:-5%;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+    border-radius: 60px;
+}
+
+.hero-img img{
+    position:relative;
+    height:100%;
+    width:100%;
+    right:-20px;
+}
+
+.btn-1{
+    background-color:hsl(231, 69%, 60%);
+    color:white;
+    border:1px solid hsl(231, 69%, 60%);
+    margin-right: 20px;
+}
+
+.btn-2{
+    background-color:#fffffe;
+    color:hsl(229, 31%, 21%);
+}
+
+.title-text{
+    color:hsl(229, 31%, 21%);
+    text-align: center;
+}
+
+.sub-text{
+    text-align: center;
+    width:45%;
+    margin: auto;
+    line-height: 30px;
+    margin-bottom: 70px;
+}
+
+.tab{
+    width: 50%;
+    margin: auto;
+    color:hsl(229, 31%, 21%);
+    margin-bottom: 70px;
+    font-weight: 500;
+}
+
+.tab span{
+    padding-bottom: 15px;
+}
+
+.tab span:first-of-type{
+    border-bottom: 3px solid hsl(0, 94%, 66%)
+    ;
+}
+
+.tab span:not(:last-of-type){
+    margin-right: 80px;
+}
+
+.tab-1{
+    margin-bottom: 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.tab-1-text{
+    width:36%;
+    padding-top: 30px;
+    line-height: 30px;
+    text-align: left;
+}
+
+.tab-1-img{
+    width:50%;
+}
+
+.tab-bg{
+    position:absolute;
+    width:30%;
+    height:39%;
+    background-color: hsl(231, 69%, 60%);    
+    top: 178%;
+    left:-5%;
+    border-radius: 60px;
+}
+
+.tab-1-img img{
+    position:relative;
+    height:90%;
+    width:90%;
+    left:-10px;
+}
+
+.cards{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-bottom: 80px;
+}
+
+.extension-card{
+    width:20%;
+    text-align: center;
+    box-shadow: 5px 5px 14px #949494,
+     -5px -5px 14px #fffffe;
+     border-radius: 8px;
+     padding: 20px;
+}
+
+h4{
+    color: hsl(229, 31%, 21%);
+}
+
+hr{
+    border: 2px dashed hsl(229, 8%, 60%);
+}
+
+.extension-card button,
+.faq-section button{
+    display: block;
+    margin:20px auto 0px auto;
+}
+
+.faq:first-of-type{
+    border-top: 1px solid hsl(229, 8%, 60%);
+}
+
+.faq{
+    width:45%;
+    margin: auto; 
+    border-bottom: 1px solid hsl(229, 8%, 60%);
+}
+
+.question img{
+    float: right;
+}
+
+.answer{
+    display: none;
+}
+
+.subscribe{
+    margin-top: 80px;
+    width: 100%;
+    color: white;
+    background-color: hsl(231, 69%, 60%);
+    text-align: center;
+    padding: 50px;
+}
+
+.subscribe p{
+    text-transform: uppercase;
+    font-size: 13px;
+}
+
+.subscribe h2{
+    width: 30%;
+    margin: auto;
+    line-height: 35px;
+}
+
+.contact{
+    margin-top: 30px;
+}
+
+.contact button{
+    background-color: hsl(0, 94%, 66%);
+    border: 2px solid hsl(0, 94%, 66%);
+    color:white;
+}
+
+input{
+    width: 30%;
+    padding: 8px;
+    outline-style: none;
+    border-radius:8px;
+    border:2px solid white;
+    margin-right: 20px;
+}
+
+.footer{
+    margin-top: -18px;
+    background-color: hsl(229, 31%, 21%);
+    color:white;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.footer-item ul{
+    display:flex;
+    flex-direction: row;
+    justify-content: right;
+}
+
+.footer-item ul li{
+    list-style-type: none;
+    margin-right:30px;
+    font-weight: 500;
+    font-size: small;
+}
+
+.footer-item ul li img{
+    width:20px;
+    height:auto;
+}
+
+.footer-link{
+    margin-top: 8px;
+    margin-left: 50px;
+}
+
+.footer-logo{
+    margin-top: 5px;
+}
+
+.footer-logo img{
+    position: absolute;
+}
+
+.footer-logo span{
+    position: relative;
+    left:30px; 
+    top: 5px;
+}
+
+
+
+
