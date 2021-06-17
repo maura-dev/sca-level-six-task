@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
   <link rel="stylesheet" type="text/css" href="styles.css">
   <title>Frontend Mentor | Bookmark landing page</title>
 <body>
@@ -40,47 +41,23 @@
       </p>
       <div class="tab">
         <p>
-          <span>Simple Bookmarking</span>
-          <span>Speedy Searching</span>
-          <span>Easy Sharing</span>
+          <span onclick="showTab1()" class="active-tab" id="tab-1">Simple Bookmarking</span>
+          <span onclick="showTab2()" id="tab-2">Speedy Searching</span>
+          <span onclick="showTab3()" id="tab-3">Easy Sharing</span>
         </p>
       </div>
   
       <div class="tab-1">
         <div class="tab-1-img">
           <div class="tab-bg"></div>
-          <img src="./images/illustration-features-tab-1.svg">
+          <img src="./images/illustration-features-tab-1.svg" id="tab-img">
         </div>
         <div class="tab-1-text">
-          <h2 class="title-text" style="text-align: left;">Bookmark in one click</h2>
-          <p>Organize your bookmarks however you like. Our simple drag-and-drop interface gives you complete control over how you manage your favourite sites.</p><br/>
+          <h2 class="title-text" style="text-align: left;" id= "tab-header">Bookmark in one click</h2>
+          <p id="tab-text">Organize your bookmarks however you like. Our simple drag-and-drop interface gives you complete control over how you manage your favourite sites.</p><br/>
             <button class="btn-1">More Info</button>
         </div>
       </div>
-  
-      <!--<div class="tab-2">
-        <div class="tab-2-img">
-          <div class="bg"></div>
-          <img src="./images/illustration-features-tab-2.svg">
-        </div>
-        <div class="tab-2-text">
-          <h2 class="title-text">Intelligent search</h2>
-          <p> Our powerful search feature will help you find saved sites in no time at all. No need to trawl through all of your bookmarks.</p>
-          <button>More Info</button>
-        </div>
-      </div>
-  
-      <div class="tab-3">
-        <div class="tab-3-img">
-          <div class="bg"></div>
-          <img src="./images/illustration-features-tab-3.svg">
-        </div>
-        <div class="tab-3-text">
-          <h2 class="title-text">Share your bookmarks</h2>
-          <p> Easily share your bookmarks and collections with others. Create a shareable link that you can send at the click of a button.</p>
-          <button>More Info</button>
-        </div>
-      </div>-->
   
     </div>
   
@@ -120,23 +97,23 @@
     <div class="faq-section">
       <h2 class="title-text">Frequently Asked Questions</h2>
       <p class="sub-text">Here are some of our FAQs. If you have any other questions you’d like answered please feel free to email us.</p>
-      <div class="faq">
-        <p class="question">What is Bookmark?<img src="./images/icon-arrow.svg"></p>
-        <p class="answer">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tincidunt 
+      <div class="faq" onclick="showFaq('one')">
+        <p class="question" id="qone">What is Bookmark ?<i class='fas fa-chevron-down' id="img-one"></i></p>
+        <p class="answer" id="one">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tincidunt 
           justo eget ultricies fringilla. Phasellus blandit ipsum quis quam ornare mattis.</p>
       </div>
-      <div class="faq">
-        <p class="question"> How can I request a new browser?<img src="./images/icon-arrow.svg"></p>
-        <p class="answer">Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non ligula. Suspendisse imperdiet. Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non ligula. Suspendisse imperdie tVivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non ligula. Suspendisse imperdiet.
+      <div class="faq" onclick="showFaq('two')">
+        <p class="question" id="qtwo"> How can I request a new browser ?<i class='fas fa-chevron-down' id="img-two"></i></p>
+        <p class="answer" id="two">Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non ligula. Suspendisse imperdiet. Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non ligula. Suspendisse imperdie tVivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non ligula. Suspendisse imperdiet.
         </p>
       </div>
-      <div class="faq">
-        <p class="question">Is there a mobile app?<img src="./images/icon-arrow.svg"></p>
-        <p class="answer">Sed consectetur quam id neque fermentum accumsan. Praesent luctus vestibulum dolor, ut condimentum urna vulputate eget. Cras in ligula quis est pharetra mattis sit amet pharetra purus. Sed sollicitudin ex et ultricies bibendum.</p>
+      <div class="faq" onclick="showFaq('three')">
+        <p class="question" id="qthree">Is there a mobile app ?<i class='fas fa-chevron-down' id="img-three"></i></p>
+        <p class="answer" id="three">Sed consectetur quam id neque fermentum accumsan. Praesent luctus vestibulum dolor, ut condimentum urna vulputate eget. Cras in ligula quis est pharetra mattis sit amet pharetra purus. Sed sollicitudin ex et ultricies bibendum.</p>
       </div>
-      <div class="faq">
-        <p class="question">What about other Chromium browsers?<img src="./images/icon-arrow.svg"></p>
-        <p class="answer">Integer condimentum ipsum id imperdiet finibus. Vivamus in placerat mi, at euismod dui. Aliquam vitae neque eget nisl gravida pellentesque non ut velit.</p>
+      <div class="faq" onclick="showFaq('four')">
+        <p class="question" id="qfour">What about other Chromium browsers ?<i class='fas fa-chevron-down' id="img-four"></i></p>
+        <p class="answer" id="four">Integer condimentum ipsum id imperdiet finibus. Vivamus in placerat mi, at euismod dui. Aliquam vitae neque eget nisl gravida pellentesque non ut velit.</p>
       </div>
   
       <button class="btn-1">More Info</button>
@@ -150,9 +127,14 @@
     <p >35,000+ already joined</p>
     <h2>Stay up-to-date with what we’re doing</h2>
     <div class="contact">
-      <input type="email"/>
-      <button>Contact Us</button>
+      <div class="input-field">
+        <div class="input" id="input"><input type="email" id="email-input" placeholder="Enter email" 
+          onchange="inputChange()" /><img src="./images/icon-error.svg" id="error"></div>
+        <div id="error-msg">Whoops!, make sure its an email</div>
+      </div>
+      <button onclick="inputValidity()">Contact Us</button>
     </div>
+    
   </div>
 
   <div class="footer">
@@ -182,4 +164,6 @@
     </p>
   </footer>
 </body>
+
+<script type="text/javascript" src="./main.js"></script>
 </html>

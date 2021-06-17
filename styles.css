@@ -13,11 +13,13 @@ html,body{
 }
 
 button{
-    padding:8px 20px;
+    padding:10px 20px;
     border-radius: 5px;
     outline-style: none;
     font-family: 'Rubik', sans-serif;
     font-weight: 500;
+        box-shadow: 5px 5px 14px #949494,
+     -5px -5px 14px #fffffe;
 }
 .attribution {
      font-size: 11px; 
@@ -54,6 +56,11 @@ nav ul li{
     font-size: medium;
 }
 
+nav ul li:hover{
+    color:hsl(0, 94%, 66%);
+    cursor:    pointer;
+}
+
 .nav-item{
     margin-top: 8px;
 }
@@ -63,6 +70,12 @@ nav ul li{
     background-color: hsl(0, 94%, 66%);
     border-radius: 5px;
     color:white;
+    border:2px solid hsl(0, 94%, 66%);;
+}
+
+.nav-btn:hover{
+    color: hsl(0, 94%, 66%);
+    cursor:     pointer;
 }
 
 .main{
@@ -98,7 +111,7 @@ nav ul li{
     height:39%;
     background-color: hsl(231, 69%, 60%);
     position:absolute;
-    top: 52%;
+    top: 46%;
     right:-5%;
     border-top-left-radius: 50px;
     border-bottom-left-radius: 50px;
@@ -119,9 +132,26 @@ nav ul li{
     margin-right: 20px;
 }
 
+
+.btn-1:hover{
+    background-color:white;
+    border:1px solid hsl(231, 69%, 60%);
+    color:hsl(231, 69%, 60%);
+    cursor: pointer;
+}
+
+
 .btn-2{
     background-color:#fffffe;
     color:hsl(229, 31%, 21%);
+    border:1px solid #fffffe;
+}
+
+.btn-2:hover{
+    background-color:#fffffe;
+    color:hsl(229, 31%, 21%);
+    border:1px solid hsl(229, 31%, 21%);
+    cursor: pointer;
 }
 
 .title-text{
@@ -149,10 +179,15 @@ nav ul li{
     padding-bottom: 15px;
 }
 
-.tab span:first-of-type{
-    border-bottom: 3px solid hsl(0, 94%, 66%)
-    ;
+.tab span:hover{
+    cursor: pointer;
+    color:hsl(0, 94%, 66%);
 }
+
+.active-tab{
+    border-bottom: 3px solid hsl(0, 94%, 66%);
+}
+
 
 .tab span:not(:last-of-type){
     margin-right: 80px;
@@ -181,7 +216,7 @@ nav ul li{
     width:30%;
     height:39%;
     background-color: hsl(231, 69%, 60%);    
-    top: 178%;
+    top: 164%;
     left:-5%;
     border-radius: 60px;
 }
@@ -190,7 +225,7 @@ nav ul li{
     position:relative;
     height:90%;
     width:90%;
-    left:-10px;
+
 }
 
 .cards{
@@ -233,12 +268,43 @@ hr{
     border-bottom: 1px solid hsl(229, 8%, 60%);
 }
 
+
+.faq:hover{
+    cursor: pointer;
+}
+
+.question{
+    font-weight: 600;
+    color:hsl(229, 31%, 21%);
+}
+
+.question:hover{
+    color:hsl(0, 94%, 66%);
+}
+
 .question img{
     float: right;
 }
 
+i{
+    float: right;
+}
+
+.fa-chevron-down{
+    color:hsl(231, 69%, 60%)     
+}
+
+.fa-chevron-up{
+    color:hsl(0, 94%, 66%);     
+}
+
 .answer{
+    margin-top:20px;
     display: none;
+}
+
+.reveal{
+    display: block;
 }
 
 .subscribe{
@@ -262,23 +328,76 @@ hr{
 }
 
 .contact{
-    margin-top: 30px;
+    margin: 30px auto 0px auto;
+    display: flex;  
+    flex-direction: row;
+    justify-content: center;
+
 }
 
 .contact button{
     background-color: hsl(0, 94%, 66%);
     border: 2px solid hsl(0, 94%, 66%);
     color:white;
+    height:40px;
+    box-shadow: none;
+}
+
+.contact button:hover{
+    color: hsl(0, 94%, 66%);
+    border: 2px solid hsl(0, 94%, 66%);
+    background-color:white;
+    cursor: pointer;
 }
 
 input{
-    width: 30%;
-    padding: 8px;
+    padding: 10px;
     outline-style: none;
-    border-radius:8px;
     border:2px solid white;
+}
+
+.input{
+    width: 100%;
+    background-color: white;
+    outline-style: none;
+    border-radius:5px;
+    border:2px solid white;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-right: 10px;
+}
+
+#error{
+    width:20px;
+    height:20px;
+    margin-top: 10px;
+    display: none;  
+}
+
+/*input:invalid {
+ border:2px solid hsl(0, 94%, 66%);
+}
+*/
+.input-field{
+    width:40%;
     margin-right: 20px;
 }
+
+#error-msg{
+    font-size:12px;
+    padding: 5px;
+    background-color: hsl(0, 94%, 66%);
+    border: 2px solid hsl(0, 94%, 66%);
+    color:white;
+    border-radius:5px;
+    font-style: italic;
+    display: none;
+}
+
+/*input:focus:invalid + span::before{
+    content:"";
+}*/
 
 .footer{
     margin-top: -18px;
@@ -303,8 +422,12 @@ input{
     font-size: small;
 }
 
+.footer-item ul li:hover{
+    color:hsl(0, 94%, 66%);
+    cursor:     pointer;
+}
+
 .footer-item ul li img{
-    width:20px;
     height:auto;
 }
 
