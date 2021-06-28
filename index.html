@@ -11,6 +11,25 @@
 <body>
   <nav>
     <img src="./images/logo-bookmark.svg">
+    <img src="./images/icon-hamburger.svg" class="hamburger" onclick="toggleNav()">
+
+
+    <div id="mobile-nav">
+
+          <div class="overlay-content">
+            <div class="overlay-top">
+              <img src="./images/mobile-logo.svg" height="18px">
+              <img src="./images/icon-close.svg" onclick="closeNav()">
+            </div>
+            
+            <hr><a href="#">FEATURES</a><hr>
+            <a href="#">PRICING</a><hr>
+            <a href="#">CONTACT</a><hr>
+            <a href="#" class="mobile-nav-btn">LOGIN</a>
+            <div class="overlay-bottom"><img src="./images/icon-facebook.svg"><img src="./images/icon-twitter.svg"></div>
+          </div>
+    </div>
+
     <ul>
       <li class="nav-item">FEATURES</li>
       <li class="nav-item">PRICING</li>
@@ -70,7 +89,7 @@
           <img src="./images/logo-chrome.svg">
           <h4>Add to Chrome</h4>
           <sub>Minimum version 62</sub>
-          <hr/>
+          <hr class="card-line"/>
           <button class="btn-1">Add & Install Extension</button>
         </div>
         
@@ -78,7 +97,7 @@
           <img src="./images/logo-firefox.svg">
           <h4>Add to Firefox</h4>
           <sub>Minimum version 55</sub>
-          <hr/>
+          <hr class="card-line"/>
           <button class="btn-1">Add & Install Extension</button>
         </div>
     
@@ -86,7 +105,7 @@
           <img src="./images/logo-opera.svg">
           <h4>Add to Opera</h4>
           <sub>Minimum version 46</sub><br/>
-          <hr/>
+          <hr class="card-line"/>
           <button class="btn-1">Add & Install Extension</button>
         </div>
       </div>
@@ -139,7 +158,7 @@
 
   <div class="footer">
     <div class="footer-item">
-      <ul>
+      <ul id="footer-nav">
         <li class="footer-logo"><img src="./images/logo-bookmark.svg"><span>BOOKMARK</span></li>
         <li class="footer-link">FEATURES</li>
         <li class="footer-link">PRICING</li>

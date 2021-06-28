@@ -248,7 +248,7 @@ h4{
     color: hsl(229, 31%, 21%);
 }
 
-hr{
+.card-line{
     border: 2px dashed hsl(229, 8%, 60%);
 }
 
@@ -450,6 +450,330 @@ input{
     top: 5px;
 }
 
+.hamburger{
+    display: none;
+    width: 30px;
+    height: 20px;
+}
+
+#mobile-nav {  
+  height: 100%;
+  display:none;
+  width: 100%;
+  position: fixed; 
+  z-index: 1; 
+  left: 0;
+  top: 0;
+  background-color: hsl(229, 31%, 21%);
+  overflow-x: hidden; 
+  transition: 0.5s;
+  padding:20px;
+}
 
 
+.overlay-content {
+  position: relative;
+  top: 3%; 
+  width: 100%; 
+  text-align: center; 
+  
+}
 
+#mobile-nav a {
+  text-decoration: none;
+  color: white;
+  display: block; 
+  transition: 0.3s; 
+  padding:10px;
+}
+
+#mobile-nav a:hover, #mobile-nav a:focus {
+  color: hsl(231, 69%, 60%);
+  cursor: pointer;
+}
+
+.overlay-top{
+  display:flex;
+  flex-direction:row;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.mobile-nav-btn{
+    margin-top: 15px;
+    border:2px solid #ffffff;
+    border-radius:5px;
+    margin-bottom: 50%;
+}
+
+.overlay-content img{
+    height:25px;
+}
+
+
+@media all and (max-width: 1024px) {
+  .bg{
+    height: 200px;
+    top: 280px;
+  }
+
+  .tab{
+    width:80%;
+  }
+
+  .tab p{
+    text-align: center;
+  }
+
+  .tab-bg {
+    height: 200px;
+    top: inherit;
+    margin-top: 130px;
+    }
+
+    .extension-card {
+     width: 25%;
+    }
+}
+
+@media all and (max-width: 800px) {
+    .hero-img img {
+        height: auto;
+        margin-top: 100px;
+    }
+
+    .hero{
+        width:50%;
+    }
+
+    .sub-text{
+        width:60%;
+    }
+
+    .tab-1-img img {
+        height: auto;
+        width: 100%;
+        margin-top: 70px;
+    }
+
+    .tab-1-img {
+        width: 45%;
+    }
+
+    .tab-1-text {
+        width: 45%;
+    }
+
+    .extension-card {
+     width: 30%;
+    }
+
+    .faq{
+        width:50%;
+    }
+
+    .subscribe h2{
+        width:60%;
+    }
+
+    .input-field{
+        width:60%;
+    }
+}
+
+@media all and (max-width: 600px) {
+
+    button{
+        padding:15px;
+    }
+    .hamburger{
+        display: block;
+    }
+
+    nav ul{
+        display:none;
+    }
+
+    .hero-section{
+        flex-direction: column-reverse;
+        margin-top: -50px;
+    }
+
+    .hero,
+    .tab-1-text {
+        width: 90%;
+        margin: auto;
+        text-align: center;
+    }
+
+    .hero-img,
+    .tab-1-img {
+        width: 90%;
+    }
+
+    .bg{
+        width:85%;
+        height:240px;
+        right:-10%;
+        top:230px;
+    }
+
+    .hero-img img {
+        margin-top: 120px;
+    }
+
+    .sub-text{
+        width:80%;
+    }
+
+    .tab p span{
+        display:block;
+        text-align:center;
+        border-bottom:1px solid hsl(229, 8%, 60%);
+        padding:20px;
+    }
+
+    .tab span:not(:last-of-type) {
+         margin-right: 0px; 
+    }
+
+    .tab span:first-of-type{
+        border-top:1px solid hsl(229, 8%, 60%);
+    }
+
+    .tab-1{
+        flex-direction: column;
+    }
+
+    #tab-header{
+        text-align: center!important;
+    }
+
+    .tab-bg{
+        width:85%;
+        height:280px;
+        left:-10%;
+    }
+
+    .tab-1-img img {
+        margin-top: 10px;
+        margin-left:5%;
+        height:auto !important;
+    }
+
+    .tab-1-text{
+        margin-top:80px;
+    }
+
+    .cards{
+        flex-direction: column;
+    }
+
+    .extension-card {
+        width: 60%;
+        margin: 20px auto;
+    }
+
+    .faq{
+        width:80%;
+         font-size:16px;
+    }
+
+    .subscribe h2{
+        width:80%;
+    }
+
+    .input-field{
+        width:100%;
+    }
+
+    .contact{
+        flex-direction: column;
+    }
+
+    .contact button{
+        margin-top:30px;
+    }
+
+    .footer{
+        flex-direction:column;
+    }
+
+    #footer-nav {
+        flex-direction: column;
+        justify-content:center;
+    }
+
+    .footer-item{
+        justify-content: center;
+        margin-top:30px;
+    }
+
+    .footer-link{
+        margin-top:30px;
+        margin-left:0px;
+    }
+
+}
+
+
+@media all and (max-width: 450px) {
+
+    .hero, .tab-1-text {
+    width: 95%;
+}
+    .bg,
+    .tab-bg{
+        height:200px;
+    }
+
+    .hero-img{
+        width:100%;
+    }
+
+    .extension-card{
+        width:70%;
+    }
+
+    .faq {
+        width: 90%;
+    }
+
+    .subscribe h2 {
+        width: 90%;
+    }
+}
+
+@media all and (max-width: 380px) {
+    .extension-card{
+        width:80%;
+    }
+
+    .hero-title{
+        font-size:30px;
+    }
+
+    .bg{
+        right:-15%;
+    }
+
+    .tab-bg{
+        left:-15%;
+    }
+
+    .bg, .tab-bg {
+        height: 170px;
+    }
+
+    .faq {
+        width: 95%;
+    }
+
+    .sub-text {
+        width: 90%;
+    }
+
+    .subscribe h2 {
+    width: 100%;
+}
+}

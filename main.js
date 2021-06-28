@@ -64,3 +64,10 @@ function inputChange(){
 		document.getElementById("error").style.display="none"
 }
 
+function toggleNav(){
+	document.getElementById("mobile-nav").style.display = "block";
+}
+
+function closeNav(){
+	document.getElementById("mobile-nav").style.display = "none";
+}
