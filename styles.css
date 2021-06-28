@@ -428,7 +428,7 @@ input{
 }
 
 .footer-item ul li img{
-    height:auto;
+    height:20px;
 }
 
 .footer-link{
@@ -438,16 +438,6 @@ input{
 
 .footer-logo{
     margin-top: 5px;
-}
-
-.footer-logo img{
-    position: absolute;
-}
-
-.footer-logo span{
-    position: relative;
-    left:30px; 
-    top: 5px;
 }
 
 .hamburger{
@@ -583,6 +573,10 @@ input{
 
 @media all and (max-width: 600px) {
 
+    body,html{
+        overflow-x: hidden;
+    }
+
     button{
         padding:15px;
     }
@@ -711,8 +705,11 @@ input{
 
     .footer-link{
         margin-top:30px;
+        text-align: center;
         margin-left:0px;
     }
+
+}
 
 }
 
