@@ -108,7 +108,7 @@ nav ul li:hover{
 
 .bg{
     width:30%;
-    height:39%;
+    height:45%;
     background-color: hsl(231, 69%, 60%);
     position:absolute;
     top: 46%;
@@ -168,7 +168,7 @@ nav ul li:hover{
 }
 
 .tab{
-    width: 50%;
+    width: 60%;
     margin: auto;
     color:hsl(229, 31%, 21%);
     margin-bottom: 70px;
@@ -214,7 +214,7 @@ nav ul li:hover{
 .tab-bg{
     position:absolute;
     width:30%;
-    height:39%;
+    height:50%;
     background-color: hsl(231, 69%, 60%);    
     top: 164%;
     left:-5%;
@@ -711,9 +711,6 @@ input{
 
 }
 
-}
-
-
 @media all and (max-width: 450px) {
 
     .hero, .tab-1-text {
@@ -774,4 +771,32 @@ input{
     .subscribe h2 {
     width: 100%;
 }
+}
+
+@media all and (max-width: 320px) {
+    .hero-btn{
+        display: flex;
+    }
+
+    .hero-title {
+        font-size: 25px;
+        margin-top: 50px;
+    }
+
+    .faq {
+        font-size: 15px;
+    }
+
+    .tab-bg {
+        height: 140px;
+        left: -17%;
+    }
+
+    .tab-1-img img {
+        margin-top: 50px;
+    }
+
+    .hero-img img {
+        margin-top: 170px;
+    }
 }
